@@ -1,0 +1,42 @@
+﻿@model WebApp.ViewModels.GameInfos.GameInfoCreateEditViewModel
+
+<div class="form-group">
+    <label asp-for="GameInfo.Title" class="control-label"></label>
+    <input asp-for="GameInfo.Title" class="form-control" />
+    <span asp-validation-for="GameInfo.Title" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="GameInfo.Description" class="control-label"></label>
+    <input asp-for="GameInfo.Description" class="form-control" />
+    <span asp-validation-for="GameInfo.Description" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="GameInfo.MainPictureUrl" class="control-label"></label>
+    <input asp-for="GameInfo.MainPictureUrl" class="form-control" />
+    <span asp-validation-for="GameInfo.MainPictureUrl" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="GameInfo.RentalCost" class="control-label"></label>
+    <input asp-for="GameInfo.RentalCost" class="form-control" />
+    <span asp-validation-for="GameInfo.RentalCost" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="GameInfo.ReplacementCost" class="control-label"></label>
+    <input asp-for="GameInfo.ReplacementCost" class="form-control" />
+    <span asp-validation-for="GameInfo.ReplacementCost" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="GameInfo.ProductCode" class="control-label"></label>
+    <input asp-for="GameInfo.ProductCode" class="form-control" />
+    <span asp-validation-for="GameInfo.ProductCode" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="GameInfo.LanguageId" class="control-label"></label>
+    <select asp-for="GameInfo.LanguageId" class ="form-control" asp-items="Model.LanguageSelectList"></select>
+</div>
+<div class="form-group">
+    <label asp-for="GameInfo.PublisherId" class="control-label"></label>
+    <select asp-for="GameInfo.PublisherId" class ="form-control" asp-items="Model.PublisherSelectList"></select>
+</div>
+
+

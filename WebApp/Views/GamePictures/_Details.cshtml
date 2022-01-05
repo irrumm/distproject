@@ -1,0 +1,22 @@
+﻿@model BLL.App.DTO.GamePicture
+
+<dl class="row">
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.PictureUrl)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.PictureUrl)
+    </dd>
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.DateAdded)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.DateAdded)
+    </dd>
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.GameInfo)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.GameInfo!.Title)
+    </dd>
+</dl>

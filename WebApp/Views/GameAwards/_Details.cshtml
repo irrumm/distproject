@@ -1,0 +1,22 @@
+﻿@model BLL.App.DTO.GameAward
+
+<dl class="row">
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.YearWon)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.YearWon)
+    </dd>
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.GameInfo)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.GameInfo!.Description)
+    </dd>
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.Award)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.Award!.Host)
+    </dd>
+</dl>

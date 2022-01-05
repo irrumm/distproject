@@ -1,0 +1,10 @@
+﻿@model WebApp.ViewModels.GameCategories.GameCategoryCreateEditViewModel
+
+<div class="form-group">
+    <label asp-for="GameCategory.GameInfoId" class="control-label"></label>
+    <select asp-for="GameCategory.GameInfoId" class ="form-control" asp-items="Model.GameInfoSelectList"></select>
+</div>
+<div class="form-group">
+    <label asp-for="GameCategory.CategoryId" class="control-label"></label>
+    <select asp-for="GameCategory.CategoryId" class ="form-control" asp-items="Model.CategorySelectList"></select>
+</div>

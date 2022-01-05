@@ -1,0 +1,16 @@
+﻿@model BLL.App.DTO.GameCategory
+
+<dl class="row">
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.GameInfo)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.GameInfo!.Description)
+    </dd>
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.Category)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.Category!.Name)
+    </dd>
+</dl>

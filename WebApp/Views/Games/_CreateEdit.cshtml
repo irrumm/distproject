@@ -1,0 +1,11 @@
+﻿@model WebApp.ViewModels.Games.GameCreateEditViewModel
+
+<div class="form-group">
+    <label asp-for="Game.GameInfoId" class="control-label"></label>
+    <select asp-for="Game.GameInfoId" class ="form-control" asp-items="Model.GameInfoSelectList"></select>
+</div>
+<div class="form-group form-check">
+    <label class="form-check-label">
+        <input class="form-check-input" asp-for="Game.Available" /> @Html.DisplayNameFor(model => model.Game.Available)
+    </label>
+</div>
